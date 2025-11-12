@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -45,7 +47,43 @@ android {
 }
 
 dependencies {
+
+    // Core modules
+    implementation(project(":core:common"))
+    implementation(project(":core:network"))
+    implementation(project(":core:database"))
+    implementation(project(":core:datastore"))
+    implementation(project(":core:location"))
+    implementation(project(":core:bluetooth"))
+    implementation(project(":core:ai"))
+    implementation(project(":core:designsystem"))
+
+    // Domain modules
+    implementation(project(":domain:marker"))
+    implementation(project(":domain:user"))
+    implementation(project(":domain:connection"))
+    implementation(project(":domain:notification"))
+    implementation(project(":domain:collaboration"))
+
+    // Data modules
+    implementation(project(":data:marker"))
+    implementation(project(":data:user"))
+    implementation(project(":data:connection"))
+    implementation(project(":data:notification"))
+    implementation(project(":data:collaboration"))
+
+    // Feature modules
+    implementation(project(":feature:map"))
+    implementation(project(":feature:marker"))
+    implementation(project(":feature:profile"))
+    implementation(project(":feature:discovery"))
+    implementation(project(":feature:proximity"))
+    implementation(project(":feature:collaboration"))
+    implementation(project(":feature:onboarding"))
+    implementation(project(":feature:settings"))
+
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
 
@@ -57,6 +95,27 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+    // Navigation
+    implementation(libs.androidx.navigation.compose)
+
+    // Hilt
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+    implementation(libs.hilt.navigation.compose)
+    implementation(libs.hilt.work)
+
+    // Work Manager
+    implementation(libs.work.runtime.ktx)
+
+    // Testing
+    testImplementation(libs.junit)
+    testImplementation(libs.mockk)
+    testImplementation(libs.turbine)
+    testImplementation(libs.kotlinx.coroutines.test)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
+    androidTestImplementation(libs.androidx.compose.ui.test.manifest)
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

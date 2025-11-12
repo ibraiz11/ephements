@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -10,6 +11,39 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core/ai" />
+            <option value="$PROJECT_DIR$/core/bluetooth" />
+            <option value="$PROJECT_DIR$/core/common" />
+            <option value="$PROJECT_DIR$/core/database" />
+            <option value="$PROJECT_DIR$/core/datastore" />
+            <option value="$PROJECT_DIR$/core/designsystem" />
+            <option value="$PROJECT_DIR$/core/location" />
+            <option value="$PROJECT_DIR$/core/network" />
+            <option value="$PROJECT_DIR$/data" />
+            <option value="$PROJECT_DIR$/data/collaboration" />
+            <option value="$PROJECT_DIR$/data/connection" />
+            <option value="$PROJECT_DIR$/data/marker" />
+            <option value="$PROJECT_DIR$/data/notification" />
+            <option value="$PROJECT_DIR$/data/user" />
+            <option value="$PROJECT_DIR$/domain" />
+            <option value="$PROJECT_DIR$/domain/collaboration" />
+            <option value="$PROJECT_DIR$/domain/connection" />
+            <option value="$PROJECT_DIR$/domain/marker" />
+            <option value="$PROJECT_DIR$/domain/notification" />
+            <option value="$PROJECT_DIR$/domain/user" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/collaboration" />
+            <option value="$PROJECT_DIR$/feature/discovery" />
+            <option value="$PROJECT_DIR$/feature/map" />
+            <option value="$PROJECT_DIR$/feature/marker" />
+            <option value="$PROJECT_DIR$/feature/onboarding" />
+            <option value="$PROJECT_DIR$/feature/profile" />
+            <option value="$PROJECT_DIR$/feature/proximity" />
+            <option value="$PROJECT_DIR$/feature/settings" />
+            <option value="$PROJECT_DIR$/test" />
+            <option value="$PROJECT_DIR$/test/test-common" />
+            <option value="$PROJECT_DIR$/test/test-fixtures" />
           </set>
         </option>
       </GradleProjectSettings>

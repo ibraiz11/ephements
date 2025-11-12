@@ -20,4 +20,36 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "ephements"
-include(":app")
+
+
+include(
+    ":app",
+    ":core:common",
+    ":core:network",
+    ":core:database",
+    ":core:datastore",
+    ":core:location",
+    ":core:bluetooth",
+    ":core:ai",
+    ":core:designsystem",
+    ":data:marker",
+    ":data:user",
+    ":data:connection",
+    ":data:notification",
+    ":data:collaboration",
+    ":domain:marker",
+    ":domain:user",
+    ":domain:connection",
+    ":domain:notification",
+    ":domain:collaboration",
+    ":feature:map",
+    ":feature:marker",
+    ":feature:profile",
+    ":feature:discovery",
+    ":feature:proximity",
+    ":feature:collaboration",
+    ":feature:onboarding",
+    ":feature:settings",
+    ":test:test-common",
+    ":test:test-fixtures"
+)
